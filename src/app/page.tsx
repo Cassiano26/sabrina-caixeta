@@ -1,10 +1,11 @@
 import Hero from '../components/Hero';
+import Sticky from '../components/Sticky';
 
 export default function Home() {
   return (
     <main className="container">
       <Hero />
-      <Hero />
+      <Sticky />
       <Hero />
       <Hero />
     </main>

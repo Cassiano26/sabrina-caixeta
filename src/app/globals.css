@@ -41,13 +41,17 @@
 @import 'tailwindcss';
 
 @layer base {
-  html,
-  body {
+  html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     font-family: 'TT Chocolates Trial', system-ui, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
   }
 }
 

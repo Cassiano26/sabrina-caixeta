@@ -52,7 +52,7 @@ export default function Hero() {
       ref={scope}
       className="relative flex min-h-screen w-full items-center bg-[#FAEFE6]"
     >
-      <div className="z-10 grid h-full grid-cols-1 items-center gap-12 px-4 lg:grid-cols-2 lg:px-26">
+      <div className="z-10 mt-28 grid h-full grid-cols-1 items-center gap-12 px-4 lg:mt-0 lg:grid-cols-2 lg:px-26">
         {/* Left Content */}
         <div
           ref={leftContentRef}
