@@ -150,7 +150,7 @@ export default function Header() {
         <div
           className={`absolute inset-0 flex flex-col items-start justify-center bg-[#529E93] px-8 transition-transform duration-300 ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}
         >
-          <nav className="flex w-full max-w-md flex-col gap-6 text-white">
+          <nav className="flex w-full flex-col gap-6 text-white">
             <a
               href="#"
               onClick={() => setIsMenuOpen(false)}
