@@ -1,3 +1,43 @@
+@font-face {
+  font-family: 'TT Chocolates Trial';
+  src: url('/fonts/TT Chocolates Trl/TT Chocolates Trial Regular.otf')
+    format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Chocolates Trial';
+  src: url('/fonts/TT Chocolates Trl/TT Chocolates Trial Medium.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Chocolates Trial';
+  src: url('/fonts/TT Chocolates Trl/TT Chocolates Trial DemiBold.otf')
+    format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Chocolates Trial';
+  src: url('/fonts/TT Chocolates Trl/TT Chocolates Trial Bold.otf')
+    format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Chocolates Trial';
+  src: url('/fonts/TT Chocolates Trl/TT Chocolates Trial ExtraBold.otf')
+    format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 @import 'tailwindcss';
 
 @layer base {
@@ -7,6 +47,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'TT Chocolates Trial', system-ui, sans-serif;
   }
 }
 
