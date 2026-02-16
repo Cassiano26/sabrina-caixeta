@@ -1,11 +1,17 @@
 interface GreenShapeProps {
   width?: number | string;
   height?: number | string;
+  className?: string;
 }
 
-export function LogoHeader({ width = 152, height = 60 }: GreenShapeProps) {
+export function LogoHeader({
+  width = 152,
+  height = 60,
+  className,
+}: GreenShapeProps) {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 152 60"
