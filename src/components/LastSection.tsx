@@ -60,7 +60,7 @@ export default function LastSection() {
       ref={scope}
       className="relative flex w-full items-center bg-[#FAEFE6] py-25"
     >
-      <div className="z-10 grid h-full w-full grid-cols-1 items-center justify-center gap-6 px-4 lg:grid-cols-2 lg:px-85.25">
+      <div className="z-10 grid h-full w-full grid-cols-1 items-center justify-center gap-6 px-4 lg:grid-cols-2 lg:px-80">
         {/* Left Image */}
         <div
           ref={leftImageRef}
@@ -78,7 +78,7 @@ export default function LastSection() {
         {/* Right Content */}
         <div
           ref={rightContentRef}
-          className="mx-auto flex max-w-76 flex-col justify-center text-[#313131]"
+          className="mx-auto flex max-w-90 flex-col justify-center text-[#313131]"
         >
           {/* Icon and Title */}
           <div className="relative">
