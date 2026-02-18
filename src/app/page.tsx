@@ -1,4 +1,5 @@
 import Hero from '../components/Hero';
+import Services from '../components/Services';
 import Sticky from '../components/Sticky';
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     <main className="container">
       <Hero />
       <Sticky />
-      <Hero />
+      <Services />
       <Hero />
     </main>
   );
