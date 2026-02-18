@@ -1,5 +1,6 @@
 import Hero from '../components/Hero';
 import Services from '../components/Services';
+import Slider from '../components/Slider';
 import Sticky from '../components/Sticky';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Sticky />
       <Services />
+      <Slider />
       <Hero />
     </main>
   );
