@@ -1,3 +1,4 @@
+import AboutMe from '../components/AboutMe';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Slider from '../components/Slider';
@@ -10,6 +11,7 @@ export default function Home() {
       <Sticky />
       <Services />
       <Slider />
+      <AboutMe />
       <Hero />
     </main>
   );
