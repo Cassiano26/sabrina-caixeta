@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Slider from '../components/Slider';
 import Sticky from '../components/Sticky';
+import LastSection from '../components/LastSection';
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <Services />
       <Slider />
       <AboutMe />
-      <Hero />
+      <LastSection />
     </main>
   );
 }
