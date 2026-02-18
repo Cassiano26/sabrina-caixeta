@@ -52,11 +52,13 @@ export default function Slider() {
 
       ScrollTrigger.refresh();
 
+      const getContainerWidth = () => Math.min(window.innerWidth, 1280);
+
       scrollTlRef.current = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
           start: 'top top',
-          end: () => `+=${window.innerWidth * (slides.length - 1)}`,
+          end: () => `+=${getContainerWidth() * (slides.length - 1)}`,
           scrub: 0.5,
           pin: true,
           anticipatePin: 1,
@@ -64,7 +66,7 @@ export default function Slider() {
         },
       });
 
-      const getScrollDistance = () => window.innerWidth * (slides.length - 1);
+      const getScrollDistance = () => getContainerWidth() * (slides.length - 1);
 
       scrollTlRef.current.to(
         horizontalRef.current,
@@ -115,15 +117,15 @@ export default function Slider() {
       <div
         ref={horizontalRef}
         className="flex h-full"
-        style={{ width: `${slides.length * 100}vw` }}
+        style={{ width: `calc(${slides.length} * min(100vw, 1280px))` }}
       >
         {slides.map((slide, index) => (
           <div
             key={slide.id}
-            className={`slide-${index} relative flex h-full w-screen shrink-0 items-center`}
+            className={`slide-${index} relative flex h-full w-screen max-w-7xl shrink-0 items-center`}
           >
             {/* Decorative peach circle - background */}
-            <div className="absolute top-0 left-0 z-0 h-90 w-90 -translate-x-1/4 -translate-y-1/4 rounded-full bg-[#F5D5C3] opacity-80 lg:h-175 lg:w-175" />
+            <div className="absolute top-0 left-0 z-0 hidden h-90 w-90 -translate-x-1/4 rounded-full bg-[#F5D5C3] opacity-80 lg:flex lg:h-175 lg:w-175" />
 
             <div className="relative z-10 grid h-full w-full grid-cols-1 items-center gap-8 px-6 lg:grid-cols-2 lg:gap-16 lg:px-26">
               {/* Left Content */}

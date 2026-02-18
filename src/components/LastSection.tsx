@@ -19,7 +19,7 @@ export default function LastSection() {
         scrollTrigger: {
           trigger: scope.current,
           start: 'top 70%',
-          toggleActions: 'play none none reset',
+          toggleActions: 'play none none reverse',
         },
       });
 
@@ -60,11 +60,11 @@ export default function LastSection() {
       ref={scope}
       className="relative flex w-full items-center bg-[#FAEFE6] py-25"
     >
-      <div className="z-10 grid h-full w-full grid-cols-1 items-center gap-6 px-4 lg:grid-cols-2 lg:px-85.25">
+      <div className="z-10 grid h-full w-full grid-cols-1 items-center justify-center gap-6 px-4 lg:grid-cols-2 lg:px-85.25">
         {/* Left Image */}
         <div
           ref={leftImageRef}
-          className="relative flex h-65.75 items-center justify-center lg:h-118.25"
+          className="relative flex h-109.5 items-center justify-center lg:h-118.25"
         >
           <Image
             src="/images/lastSectionImage.png"
@@ -78,7 +78,7 @@ export default function LastSection() {
         {/* Right Content */}
         <div
           ref={rightContentRef}
-          className="flex max-w-76 flex-col justify-center text-[#313131]"
+          className="mx-auto flex max-w-76 flex-col justify-center text-[#313131]"
         >
           {/* Icon and Title */}
           <div className="relative">

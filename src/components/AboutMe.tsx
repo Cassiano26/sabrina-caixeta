@@ -52,7 +52,7 @@ export default function AboutMe() {
           scrollTrigger: {
             trigger: sectionRef.current,
             start: 'top 80%',
-            toggleActions: 'play none none reset',
+            toggleActions: 'play none none reverse',
           },
         },
       );
@@ -64,7 +64,7 @@ export default function AboutMe() {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: 'top 70%',
-          toggleActions: 'play none none reset',
+          toggleActions: 'play none none reverse',
         },
       });
 
@@ -93,24 +93,23 @@ export default function AboutMe() {
   return (
     <section
       ref={sectionRef}
-      className="relative flex min-h-screen w-full overflow-hidden bg-[#FAEFE6] px-4 py-13 lg:px-26"
+      className="relative flex w-full flex-col overflow-hidden bg-[#FAEFE6] px-4 py-13 lg:px-26"
     >
+      <h2
+        ref={titleRef}
+        className="mb-22 text-[28px] leading-tight font-semibold text-[#313131] lg:text-[36px]"
+      >
+        Um pouco sobre mim:
+      </h2>
       <div className="relative z-10 grid w-full grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
         {/* Left Content - Cards */}
         <div className="flex flex-col">
-          <h2
-            ref={titleRef}
-            className="mb-22 text-[28px] leading-tight font-semibold text-[#313131] lg:text-[36px]"
-          >
-            Um pouco sobre mim:
-          </h2>
-
           <div className="flex flex-col items-end gap-9.25">
             {cards.map((card, index) => (
               <div
                 key={index}
                 ref={card.ref}
-                className={`relative max-w-82.25 rounded-2xl p-5 shadow-sm backdrop-blur-sm ${
+                className={`relative rounded-2xl p-5 shadow-sm backdrop-blur-sm lg:max-w-82.25 ${
                   index % 2 === 1
                     ? 'bg-[#BEE3CB]/90 lg:mr-21'
                     : 'bg-[#F5D6C6]/90'
