@@ -36,7 +36,7 @@ const services = [
     title: 'Consultoria de amamentação',
     image: '/services/breastServiceImage.png',
     description:
-      'A Consultoria de Amamentação Online oferece um cuidado especializado para acompanhar a mulher durante a gestação, promovendo conforto, equilíbrio e preparo para o parto — tudo isso no aconchego da sua casa, onde quer que você esteja no mundo. Nos encontros virtuais personalizados, você aprende exercícios seguros, técnicas de respiração, relaxamento e fortalecimento do assoalho pélvico que aliviam dores, melhoram a postura e favorecem um parto mais tranquilo e consciente, em um atendimento que une autonomia, bem-estar e conexão, respeitando seu ritmo e sua realidade — sempre com suporte acolhedor e baseado em evidências.',
+      'Consultoria de Amamentação Online para Brasileiras no Exterior Amamentar longe do Brasil pode ser desafiador, mas você não precisa passar por isso sozinha. Ofereço consultoria de amamentação online, em português, para brasileiras expatriadas, com acompanhamento em todas as fases — da gestação ao desmame. Com ampla experiência no atendimento a famílias brasileiras no exterior e certificação IBCLC (International Board Certified Lactation Consultant), o suporte é personalizado, baseado em evidências científicas e realizado com acolhimento, respeito e sensibilidade cultural, onde quer que você esteja.',
   },
 ];
 
