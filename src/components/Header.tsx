@@ -57,9 +57,11 @@ export default function Header() {
         ref={headerRef}
         className="fixed top-0 left-0 z-50 h-40 w-full bg-transparent"
       >
-        <div className="relative container flex justify-between px-7.75 py-2.5 lg:px-26.5">
+        <div className="relative mx-auto flex max-w-7xl justify-between px-7.75 py-2.5 lg:px-26.5">
           {/* Logo */}
-          <LogoHeader className="z-50 h-11.75 w-29.75 md:h-15 md:w-38" />
+          <a href="/">
+            <LogoHeader className="z-50 h-11.75 w-29.75 md:h-15 md:w-38" />
+          </a>
 
           {/* Mobile Menu Icon */}
           <div className="flex items-center md:hidden">
@@ -77,28 +79,28 @@ export default function Header() {
           {/* Navigation Desktop */}
           <nav className="hidden items-center gap-8 md:flex">
             <a
-              href="#"
+              href="#services"
               data-text="Atendimentos"
               className="nav-link text-[12px] text-white lg:text-[20px]"
             >
               Atendimentos
             </a>
             <a
-              href="#"
+              href="#how-it-works"
               data-text="Como funciona?"
               className="nav-link text-[12px] text-white lg:text-[20px]"
             >
               Como funciona?
             </a>
             <a
-              href="#"
+              href="#about-me"
               data-text="Sobre mim"
               className="nav-link text-[12px] text-white lg:text-[20px]"
             >
               Sobre mim
             </a>
             <a
-              href="#"
+              href="#contacts"
               data-text="Contato"
               className="nav-link text-[12px] text-white lg:text-[20px]"
             >
@@ -152,7 +154,7 @@ export default function Header() {
         >
           <nav className="flex w-full flex-col gap-6 text-white">
             <a
-              href="#"
+              href="#services"
               onClick={() => setIsMenuOpen(false)}
               className="nav-link text-2xl font-semibold transition-all duration-300"
               style={{
@@ -163,7 +165,7 @@ export default function Header() {
               Atendimentos
             </a>
             <a
-              href="#"
+              href="#how-it-works"
               onClick={() => setIsMenuOpen(false)}
               className="nav-link text-2xl font-semibold transition-all duration-300"
               style={{
@@ -175,7 +177,7 @@ export default function Header() {
               Como funciona?
             </a>
             <a
-              href="#"
+              href="#about-me"
               onClick={() => setIsMenuOpen(false)}
               className="nav-link text-2xl font-semibold transition-all duration-300"
               style={{
@@ -187,7 +189,7 @@ export default function Header() {
               Sobre mim
             </a>
             <a
-              href="#"
+              href="#contacts"
               onClick={() => setIsMenuOpen(false)}
               className="nav-link text-2xl font-semibold transition-all duration-300"
               style={{

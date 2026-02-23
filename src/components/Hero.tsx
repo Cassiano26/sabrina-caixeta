@@ -50,7 +50,7 @@ export default function Hero() {
   return (
     <section
       ref={scope}
-      className="relative flex min-h-screen w-full items-center bg-[#FAEFE6]"
+      className="relative container flex min-h-screen w-full items-center overflow-x-clip bg-[#FAEFE6] xl:overflow-visible"
     >
       <div className="z-10 mt-28 grid h-full grid-cols-1 items-center gap-12 px-4 lg:mt-0 lg:grid-cols-2 lg:px-26">
         {/* Left Content */}
@@ -77,9 +77,14 @@ export default function Hero() {
           </p>
 
           {/* CTA Button */}
-          <button className="mt-10 w-fit rounded-full border border-[#1C6B70] bg-[#57CC98] px-8 py-3 text-[16px] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg lg:text-[20px]">
+          <a
+            href="https://wa.me/41774547051?text=Ol%C3%A1%21%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20uma%20conversa."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 w-fit rounded-full border border-[#1C6B70] bg-[#57CC98] px-8 py-3 text-[16px] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg lg:text-[20px]"
+          >
             Agende uma conversa
-          </button>
+          </a>
         </div>
 
         {/* Right Image */}
@@ -97,9 +102,11 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute top-0 right-0 z-0">
-        <HeroDecorativeShape />
-      </div>
+      <HeroDecorativeShape
+        width={600}
+        height={'auto'}
+        className="pointer-events-none absolute top-0 right-0 z-0 -mr-30"
+      />
     </section>
   );
 }

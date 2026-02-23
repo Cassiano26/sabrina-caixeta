@@ -92,8 +92,9 @@ export default function AboutMe() {
 
   return (
     <section
+      id="about-me"
       ref={sectionRef}
-      className="relative flex w-full flex-col overflow-hidden bg-[#FAEFE6] px-4 py-13 lg:px-26"
+      className="relative container flex w-full flex-col overflow-x-clip bg-[#FAEFE6] px-4 py-13 lg:px-26 xl:overflow-visible"
     >
       <h2
         ref={titleRef}
@@ -101,7 +102,7 @@ export default function AboutMe() {
       >
         Um pouco sobre mim:
       </h2>
-      <div className="relative z-10 grid w-full grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
+      <div className="relative z-10 grid w-full grid-cols-1 lg:grid-cols-2">
         {/* Left Content - Cards */}
         <div className="flex flex-col">
           <div className="flex flex-col items-end gap-9.25">
@@ -169,7 +170,7 @@ export default function AboutMe() {
         </div>
 
         {/* Right Content - Image */}
-        <div className="relative flex items-center justify-center lg:justify-end">
+        <div className="relative flex items-center justify-center lg:justify-start">
           <div className="relative h-100 w-75 lg:h-137.5 lg:w-105">
             <Image
               src="/images/aboutMeImage.png"

@@ -7,7 +7,7 @@ import LastSection from '../components/LastSection';
 
 export default function Home() {
   return (
-    <main className="container">
+    <main>
       <Hero />
       <Sticky />
       <Services />

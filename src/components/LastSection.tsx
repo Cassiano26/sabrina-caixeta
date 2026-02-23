@@ -58,7 +58,7 @@ export default function LastSection() {
   return (
     <section
       ref={scope}
-      className="relative flex w-full items-center bg-[#FAEFE6] py-25"
+      className="relative container flex w-full items-center overflow-x-clip bg-[#FAEFE6] py-25 xl:overflow-visible"
     >
       <div className="z-10 grid h-full w-full grid-cols-1 items-center justify-center gap-6 px-4 lg:grid-cols-2 lg:px-80">
         {/* Left Image */}
@@ -95,7 +95,9 @@ export default function LastSection() {
 
           {/* CTA Button */}
           <a
-            href="https://wa.me/YOUR_PHONE_NUMBER"
+            href="https://wa.me/41774547051?text=Ol%C3%A1%21%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20falar%20contigo%20sobre%20seus%20servi%C3%A7os."
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-5 w-fit rounded-full border border-[#1C6B70] bg-[#57CC98] px-8 py-3 text-[16px] font-medium text-white transition-all duration-300 hover:scale-105 hover:shadow-lg lg:text-[18px]"
           >
             Fale comigo no WhatsApp

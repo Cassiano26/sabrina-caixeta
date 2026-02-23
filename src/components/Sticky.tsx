@@ -67,8 +67,8 @@ export default function Sticky() {
   );
 
   return (
-    <section className="relative w-full bg-[#FAEFE6] px-4 py-16 text-[#313131] lg:px-26">
-      <StickyDecorativeShape className="pointer-events-none absolute top-0 left-0 z-0" />
+    <section className="relative container w-full overflow-x-clip bg-[#FAEFE6] px-4 py-16 text-[#313131] lg:px-26 xl:overflow-visible">
+      <StickyDecorativeShape className="pointer-events-none absolute top-0 left-0 z-0 -ml-30" />
       <div ref={sectionRef}>
         <div className="relative z-10 mx-auto flex w-full flex-col gap-8 text-center lg:w-2/3">
           {/* Title */}
