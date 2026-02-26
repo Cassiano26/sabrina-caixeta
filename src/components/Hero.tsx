@@ -105,7 +105,7 @@ export default function Hero() {
       <HeroDecorativeShape
         width={600}
         height={'auto'}
-        className="pointer-events-none absolute top-0 right-0 z-0 -mr-30"
+        className="pointer-events-none absolute -top-40 right-0 z-0 -mr-30"
       />
     </section>
   );

@@ -5,8 +5,8 @@ export default function StickyDecorativeShape({
 }) {
   return (
     <svg
-      width="573"
-      height="914"
+      width="359"
+      height="632"
       viewBox="0 0 573 914"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

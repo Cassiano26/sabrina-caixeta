@@ -129,7 +129,7 @@ export default function Slider() {
             {/* Decorative peach shape - background */}
             <SliderDecorativeShape className="absolute top-0 left-0 z-0 hidden h-auto w-90 -translate-x-1/4 lg:block lg:w-175" />
 
-            <div className="relative z-10 grid h-full w-full grid-cols-1 items-center gap-8 px-6 lg:grid-cols-2 lg:gap-16 lg:px-26">
+            <div className="relative z-10 grid h-full w-full grid-cols-1 items-center px-6 lg:grid-cols-2 lg:px-26">
               {/* Left Content */}
               <div className="left-content order-2 flex h-full flex-col text-[#313131] lg:order-1 lg:justify-end lg:py-22">
                 <div>

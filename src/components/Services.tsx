@@ -89,7 +89,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative container flex min-h-screen w-full flex-col overflow-x-clip bg-[#FAEFE6] xl:overflow-visible"
+      className="relative container flex min-h-screen w-full flex-col overflow-x-clip overflow-y-clip bg-[#FAEFE6] xl:overflow-visible"
     >
       <StickyDecorativeShape className="pointer-events-none absolute top-0 left-0 z-0 lg:hidden" />
       <div
@@ -132,7 +132,7 @@ export default function Services() {
                 {/* Service Name and Dropdown */}
                 <button
                   onClick={() => setSelectedService(service.id)}
-                  className="flex w-full items-center justify-between gap-4 rounded-full bg-[#FAC196] px-6 py-3 text-[#313131] transition-all duration-300 hover:bg-[#57CC98] hover:text-white lg:w-fit lg:bg-transparent lg:px-8 lg:py-4"
+                  className="flex w-full cursor-pointer items-center justify-between gap-4 rounded-full bg-[#FAC196] px-6 py-3 text-[#313131] transition-all duration-300 hover:bg-[#57CC98] hover:text-white lg:w-fit lg:bg-transparent lg:px-8 lg:py-4"
                 >
                   <h3 className="text-[24px]">{service.title}</h3>
                   <svg

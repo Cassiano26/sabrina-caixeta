@@ -85,13 +85,13 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="container flex flex-col items-center justify-between gap-4 bg-white px-4 py-4 lg:flex-row lg:px-26">
-        <p className="text-[20px] font-semibold text-[#313131]">
+      <div className="flex flex-col items-center justify-between bg-white px-4 py-4 lg:flex-row lg:px-26">
+        <p className="text-[14px] font-semibold text-[#313131]">
           ©Sabrina Caixeta | 2026
         </p>
-        <div className="flex items-center gap-2 text-[20px] text-[#313131]">
+        <div className="flex items-center gap-2 text-[14px] text-[#313131]">
           <span className="mt-1">Desenvolvido por</span>
-          <DiretoLogo className="h-auto w-28" />
+          <DiretoLogo className="h-auto w-16" />
         </div>
       </div>
     </footer>

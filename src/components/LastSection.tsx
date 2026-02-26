@@ -83,7 +83,7 @@ export default function LastSection() {
           {/* Icon and Title */}
           <div className="relative">
             <h2 className="text-[24px] leading-tight font-semibold">
-              Pronta para cuidar da sua melhor versão
+              Pronta para cuidar da sua melhor versão?
             </h2>
           </div>
 
