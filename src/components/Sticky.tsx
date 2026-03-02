@@ -80,7 +80,6 @@ export default function Sticky() {
             </h2>
           </div>
 
-          {/* Introduction */}
           <p className="text-[16px] leading-tight lg:text-[20px]">
             Mesmo longe, você não está sozinha. As{' '}
             <span className="font-semibold">
