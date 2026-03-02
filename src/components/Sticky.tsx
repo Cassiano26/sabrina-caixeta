@@ -95,7 +95,7 @@ export default function Sticky() {
           {/* Left - Sticky Image */}
           <div className="hidden lg:block">
             <div className="sticky top-20 flex items-center justify-center">
-              <div className="relative h-124.5 w-77.25">
+              <div className="relative h-124.5 w-full">
                 <Image
                   src="/images/stickyImageSection.png"
                   alt="Cuidado e atenção"
