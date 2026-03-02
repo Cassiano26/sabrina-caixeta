@@ -109,6 +109,9 @@ export default function Slider() {
       ref={sectionRef}
       className="relative h-screen w-full overflow-hidden bg-[#FAEFE6]"
     >
+      {/* Decorative peach shape - static background */}
+      <SliderDecorativeShape className="absolute top-0 left-0 z-0 h-auto w-90 -translate-x-1/4 lg:w-175" />
+
       {/* Section Title - Fixed position */}
       <h2 className="absolute top-6 left-6 z-20 text-[24px] leading-tight font-semibold text-[#313131] lg:top-22 lg:left-26 lg:text-[36px]">
         Como viveremos
@@ -126,9 +129,6 @@ export default function Slider() {
             key={slide.id}
             className={`slide-${index} relative flex h-full w-screen shrink-0 items-center`}
           >
-            {/* Decorative peach shape - background */}
-            <SliderDecorativeShape className="absolute top-0 left-0 z-0 hidden h-auto w-90 -translate-x-1/4 lg:block lg:w-175" />
-
             <div className="relative z-10 grid h-full w-full grid-cols-1 items-center px-6 lg:grid-cols-2 lg:px-26">
               {/* Left Content */}
               <div className="left-content order-2 flex h-full flex-col text-[#313131] lg:order-1 lg:justify-end lg:py-22">
