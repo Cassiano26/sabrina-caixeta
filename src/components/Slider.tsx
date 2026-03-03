@@ -110,7 +110,7 @@ export default function Slider() {
       className="relative h-screen w-full overflow-hidden bg-[#FAEFE6]"
     >
       {/* Decorative peach shape - static background */}
-      <SliderDecorativeShape className="absolute top-0 left-0 z-0 h-auto w-90 -translate-x-1/4 lg:w-175" />
+      <SliderDecorativeShape className="absolute top-0 left-0 z-0 h-4/5 w-auto -translate-x-1/4 lg:h-full" />
 
       {/* Section Title - Fixed position */}
       <h2 className="absolute top-6 left-6 z-20 text-[24px] leading-tight font-semibold text-[#313131] lg:top-22 lg:left-26 lg:text-[36px]">
