@@ -106,7 +106,7 @@ export default function Header() {
             >
               Contato
             </a>
-            <button className="group flex items-center gap-1 text-[12px] text-white lg:text-[20px]">
+            {/* <button className="group flex items-center gap-1 text-[12px] text-white lg:text-[20px]">
               <span className="nav-link" data-text="PT">
                 PT
               </span>
@@ -126,7 +126,7 @@ export default function Header() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </button>
+            </button> */}
           </nav>
 
           {/* Wave SVG Desktop */}
@@ -201,7 +201,7 @@ export default function Header() {
               Contato
             </a>
 
-            <button
+            {/* <button
               onClick={() => setIsMenuOpen(false)}
               className="mt-4 flex items-center justify-center gap-2 text-xl text-white transition-all duration-300"
               style={{
@@ -227,7 +227,7 @@ export default function Header() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </button>
+            </button> */}
           </nav>
         </div>
       </div>

@@ -7,6 +7,8 @@ import InstagramIcon from './svg/InstagramIcon';
 import EmailIcon from './svg/EmailIcon';
 import WhatsAppIcon from './svg/WhatsAppIcon';
 import DiretoLogo from './svg/DiretoLogo';
+import UspLogo from './svg/UspLogo';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -64,20 +66,28 @@ export default function Footer() {
 
             {/* Certifications Section */}
             <div className="flex flex-col items-center lg:items-start">
-              <h3 className="mb-6 text-[20px] font-semibold text-white">
+              <h3 className="mb-1 text-[20px] font-semibold text-white lg:mb-6">
                 Certificações:
               </h3>
-              <div className="flex items-center gap-4">
-                {/* Certification badges - placeholder shapes */}
-                {[1, 2, 3, 4].map(i => (
-                  <div
-                    key={i}
-                    className="h-12 w-10 rounded-full bg-[#1C6B70] lg:h-16 lg:w-14"
-                    style={{
-                      borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%',
-                    }}
+              <div className="flex h-full w-full items-start justify-center gap-4 lg:flex-col">
+                <UspLogo className="h-[40px] w-[100px]" />
+                <div className="relative h-[40px] w-[100px]">
+                  <Image
+                    src="/images/certifications/international.png"
+                    alt="Certificação Internacional"
+                    fill
+                    className="object-cover"
                   />
-                ))}
+                </div>
+
+                <div className="relative h-[40px] w-[100px]">
+                  <Image
+                    src="/images/certifications/ministeriocienciainnovacionuniversidades1.jpg"
+                    alt="Ministerio de Ciencia, Innovación y Universidades"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -14,25 +14,24 @@ export default function Sticky() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const items = [
     {
-      title:
-        'Atendimento em Português, com entendimento e acolhimento cultural',
+      title: 'Atendimento em Português, com acolhimento cultural',
       description:
-        'Não é só sobre falar o mesmo idioma, é sobre entender o que você sente, como você cresceu, o que você espera dessa fase. É sobre criar um espaço onde você não precisa traduzir suas emoções.',
+        'Mais do que falar o mesmo idioma, é sobre compreender sua história, seus sentimentos e o que você espera deste momento da vida, em um espaço onde você não precisa traduzir suas emoções.',
     },
     {
       title: 'Experiência pessoal de Expatriação',
       description:
-        'Também sou brasileira morando fora e reconheço em outras pais, durante as sessões online, isso tudo. É importante entender ainda mais o que está passando.',
+        'Sou brasileira vivendo no exterior e conheço os desafios de morar fora. Essa vivência contribui para uma escuta mais sensível e próxima da sua realidade.',
     },
     {
       title: 'Modelo Online Validado',
       description:
-        'Durante a pandemia, adaptei meu atendimento para o formato online e o impacto foi surpreendente. As pacientes melhoraram sua produção e se sentiram acolhidas. Hoje, a fisioterapia online é reconhecida e regulamentada pelo "Conselho de Fisioterapia". Achei importante incluir a informação de que essas práticas estão reguladas pelo Conselho de Fisioterapia.',
+        'Durante a pandemia, adaptei meus atendimentos para o formato online e os resultados foram surpreendentes. As pacientes apresentaram melhora significativa em sua evolução e relataram sentir-se acolhidas e bem acompanhadas, mesmo à distância. Desde então, a fisioterapia online passou a ser amplamente reconhecida e regulamentada pelo Conselho de Fisioterapia. Por isso, considero importante destacar que essas práticas seguem normas profissionais e são devidamente reguladas, garantindo segurança, ética e qualidade no atendimento.',
     },
     {
       title: 'Padrão de Excelência Internacional',
       description:
-        'Com base na Suíça, trago a seriedade dos padrões internacionais de saúde, combinada com o acolhimento que só open compartilha a mesma cultura pode oferecer.',
+        'Vivendo no exterior, na Suíça, uno a experiência com padrões internacionais de saúde a um atendimento humano e acolher, com a sensibilidade de quem compartilha a mesma língua e cultura.',
     },
   ];
 
@@ -74,7 +73,7 @@ export default function Sticky() {
           {/* Title */}
           <div>
             <h2 className="text-[24px] leading-tight font-semibold lg:text-[36px]">
-              O Cuidado e atenção
+              O Cuidado e a atenção
               <br />
               que você precisa
             </h2>
